@@ -1,7 +1,9 @@
 *{
     margin: 0 auto;
 }
-
+body{
+    background-color: #8f3700;
+}
 header{
     border: solid 2px brown;
     width:100%;
@@ -45,10 +47,13 @@ header{
     height: 50px;
     width: 150px;
 }
-.login{
-    border: solid 2px red;
+.menu{
+    background-color: red;
     height: 50px;
-    width: 280px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .carossel{
     border: solid 2px rgb(221, 26, 59);
@@ -78,4 +83,33 @@ main{
     border: solid 2px rgb(16, 211, 91);
     height: 80%;
     width: 20%;
-}   
+} 
+.login img{
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+
+}
+.pesq{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 10px;
+}
+.nome{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.som img{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
