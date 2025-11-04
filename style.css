@@ -1,5 +1,6 @@
 *{
     margin: 0 auto;
+    box-sizing: border-box;
 }
 body{
     background-color: #8f3700;
@@ -45,16 +46,49 @@ header{
 .nome{
     border: solid 2px green;
     height: 50px;
-    width: 150px;
+    width: 20%;
 }
 .menu{
     background-color: red;
     height: 50px;
-    width: 50%;
+    width: 79%;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    margin: 0;
 }
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0;
+}
+
+.som{
+    width: 10%;
+    margin: 0;
+
+}
+
+.iconPlay{
+    fill:hwb(47 71% 6% / 1);
+    height: 25px;
+    margin: 0;
+    width: 100px;
+}
+
+.login{
+    /* width: 30%; */
+}
+
+/* .login img{
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+} */
+
 .carossel{
     border: solid 2px rgb(221, 26, 59);
     width:100%;
@@ -84,13 +118,7 @@ main{
     height: 80%;
     width: 20%;
 } 
-.login img{
-    width: 35%;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
 
-}
 .pesq{
     align-items: center;
     justify-content: space-around;
@@ -102,14 +130,5 @@ main{
     align-items: center;
     display: flex;
     color: white;
-}
-.pesquisa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.som img{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+    width: 30%;
 }
