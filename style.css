@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     box-sizing: border-box;
+   font-family: "Texturina", serif;
 }
 body{
     background-color: #8f3700;
@@ -17,7 +18,7 @@ header{
 .nav1{
     border: solid 2px;
     width: 40%;
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -25,7 +26,7 @@ header{
 .nav2{
     border: solid 2px;
     width: 60%;
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,21 +36,71 @@ header{
     border: solid 2px blue;
     width: 10%;
     height: 80%;
-   margin-top: 5px;
+    margin-top: 5px;
 }
 .opcoes{
-    border: solid 2px black;
+    
     margin-top: 5px;
     width: 80%;
-    height: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.personagem{
+    margin: 0;
+    width: 15%;
+    height: 70px;
+    background-image: url("/imagens/personagem.png");
+    background-size: 55px;
+    background-repeat: no-repeat;
+   
+}
+
+.historia{
+    margin: 0;
+    width: 15%;
+    height: 70px;
+    background-image: url("/imagens/historia.png");
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+.itens{
+    margin: 0;
+    width: 15%;
+    height: 70px;
+    background-image: url("/imagens/itens.png");
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+.artes{
+    margin: 0;
+    width: 15%;
+    height: 70px;
+    background-image: url("/imagens/artes.png");
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+.contato{
+    margin: 0;
+    width: 15%;
+    height: 70px;
+    background-image: url("/imagens/contato.png");
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
 .nome{
-    border: solid 2px green;
+    
     height: 50px;
     width: 20%;
 }
 .menu{
-    background-color: red;
+  
     height: 50px;
     width: 79%;
     display: flex;
@@ -136,4 +187,80 @@ main{
     display: flex;
     color: white;
     width: 60%;
+}
+
+.colecao{
+    background-color: #48271a;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+.oferta{
+    margin-top: 20px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.of1{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 1.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of2{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 2.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of3{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 3.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of4{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 4.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of5{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 5.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of6{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 6.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.of7{
+    margin: 0;
+    width: 10%;
+    height: 125px;
+    background-image: url("/imagens/item\ 7.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
 }
