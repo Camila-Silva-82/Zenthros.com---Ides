@@ -7,7 +7,6 @@ body{
     background-color: #8f3700;
 }
 header{
-    border: solid 2px brown;
     width:100%;
     height: 100px;
     display: flex;
@@ -16,7 +15,7 @@ header{
 }
 
 .nav1{
-    border: solid 2px;
+   
     width: 40%;
     height: 90%;
     display: flex;
@@ -24,8 +23,8 @@ header{
 }
 
 .nav2{
-    border: solid 2px;
-    width: 60%;
+    
+    width: 80%;
     height: 90%;
     display: flex;
     justify-content: space-around;
@@ -33,10 +32,12 @@ header{
 }
 
 .logo{
-    border: solid 2px blue;
-    width: 10%;
-    height: 80%;
-    margin-top: 5px;
+    width: 80px;
+    height: 90%;
+    background-image: url("/imagens/LOGO.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
 }
 .opcoes{
     
@@ -161,6 +162,14 @@ main{
     align-items: center;
     margin-top: 10px;
 }
+.Perso{
+    width:100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
 .cont1{
     height: 80%;
     width: 60%;
@@ -199,6 +208,13 @@ main{
     text-align: center;
     color: white;
     
+}
+.caracters{
+    background-color: #48271a;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
 }
 
 .oferta{
@@ -315,4 +331,69 @@ footer{
     width: 100%;
     height: 80%;
     font-size: 19px;
+}
+
+.categoria{
+    margin-top: 45px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cat{
+    background-color: #925d3c;
+    margin: 0;
+    width: 15%;
+    height: 400px;
+}
+.cat2{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat3{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat4{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat5{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat6{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat7{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
+}
+.cat8{
+    background-color: #8f3700;
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    border: solid red;
 }
