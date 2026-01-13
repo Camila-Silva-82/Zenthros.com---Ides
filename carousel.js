@@ -10,3 +10,55 @@ const total = slides.length;
 const intervaloTimer = 3000;
 let timer = null;
 
+for (let i = 0; i < total; i++){
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if( i == 0)dot.classList.add('active');
+    dot.dataset.index = i;
+    dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll('.dot')
+
+function updateSlide(){
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    dots.forEach(d => d.classList.remove('active'));
+    if(dots[index]) dots[index].classList.add('active');
+}
+
+function nextSlide(){
+    index = (index + 1) % total;
+    updateSlide();
+}
+
+function prevSlide(){
+    index = (index - 1 + total) % total;
+    updateSlide();
+}
+
+function startAutoPlay(){
+    startAutoPlay();
+    timer = setInterval(nextSlide, intervaloTimer);
+}
+
+function stopAutoPlay(){
+    if(timer) {clearInterval(timer); timer = null };
+}
+
+btnNext.addEventListener('click', () => {nextSlide(); startAutoPlay();})
+
+btnPrev.addEventListener('click', () => {prevSlide(); startAutoPlay();})
+
+dots.forEach(dot => {dot.addEventListener('click', (e) => {index = Number(e.currentTarget.dataset.index);updateSlide();startAutoPlay();})})
+
+carousel.addEventListener('mouseenter' , stopAutoPlay);
+carousel.addEventListener('mouseleave' , startAutoPlay);
+
+let resizeTimer;
+
+window.addEventListener('resize' , () => {clearTimeout(resizeTimer); resizeTimer = setTimeout(() => {updateSlide();}, 50)})
+
+updateSlide();
+startAutoPlay();
