@@ -39,7 +39,7 @@ function prevSlide(){
 }
 
 function startAutoPlay(){
-    startAutoPlay();
+    stopAutoPlay();
     timer = setInterval(nextSlide, intervaloTimer);
 }
 
